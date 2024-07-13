@@ -32,4 +32,12 @@ TODO: Add long description of the pod here.
   s.dependency 'AppAuth', '>= 1.7.3', '< 2.0'
   s.dependency 'GTMAppAuth', '>= 4.1.1', '< 5.0'
   s.dependency 'GTMSessionFetcher/Core', '~> 3.3'
+  
+  s.pod_target_xcconfig = {
+    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources"'
+  }
+
+  s.user_target_xcconfig = {
+    'HEADER_SEARCH_PATHS' => '"$(inherited)" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn" "$(SRCROOT)/GoogleSignIn-iOS/GoogleSignIn/Sources"'
+  }
 end
