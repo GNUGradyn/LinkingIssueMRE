@@ -1,0 +1,6 @@
+framework module LinkingIssueMRE {
+  umbrella header "LinkingIssueMRE-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -22,21 +22,14 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/Gradyn Wursten/LinkingIssueMRE'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gradyn Wursten' => 'me@gradyn.com' }
-  s.source           = { :git => 'https://github.com/Gradyn Wursten/LinkingIssueMRE.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/GNUGradyn/LinkingIssueMRE.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'LinkingIssueMRE/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'LinkingIssueMRE' => ['LinkingIssueMRE/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'LinkingIssueMRE/Classes/**/*', 'GoogleSignIn-iOS/GoogleSignIn/Sources/**/*.[mh]'
+  s.public_header_files = 'GoogleSignIn-iOS/GoogleSignIn/Sources/Public/GoogleSignIn/*.h'
+  s.dependency 'AppCheckCore', '>= 10.19.1', '< 11.0'
+  s.dependency 'AppAuth', '>= 1.7.3', '< 2.0'
+  s.dependency 'GTMAppAuth', '>= 4.1.1', '< 5.0'
+  s.dependency 'GTMSessionFetcher/Core', '~> 3.3'
 end

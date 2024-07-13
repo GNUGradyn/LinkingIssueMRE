@@ -1,0 +1,6 @@
+framework module Pods_LinkingIssueMRE_Tests {
+  umbrella header "Pods-LinkingIssueMRE_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
